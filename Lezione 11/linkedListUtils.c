@@ -1,13 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>  // For malloc() and free()
 
-typedef struct Node {
+typedef struct {
     int data;
     struct Node *next;
 } Node;
 
 /**
- * @brief Recursively calculates the length of a linked list.
+ * Recursively calculates the length of a linked list.
  * Calculates the length of a linked list.
  *
  * @param head The head node of the linked list.
@@ -22,7 +22,7 @@ int recLength(Node *head) {
 }
 
 /**
- * @brief Recursively finds a node with the specified data in a linked list.
+ * Recursively finds a node with the specified data in a linked list.
  * Finds a node with the specified data in a linked list.
  *
  * @param head The head of the linked list.
@@ -40,7 +40,7 @@ Node *find(Node *head, int data) {
 }
 
 /**
- * @brief Recursively finds the last node in a linked list.
+ * Recursively finds the last node in a linked list.
  * Returns the last node in a linked list that contains the specified data.
  *
  * @param head The head node of the linked list.
@@ -60,7 +60,7 @@ Node *last(Node *head) {
 }
 
 /**
- * @brief Recursively inserts a node with the specified data into a linked list.
+ * Recursively inserts a node with the specified data into a linked list.
  * Appends a node with the specified data to the end of a linked list.
  *
  * @param head The head node of the linked list.
@@ -87,7 +87,7 @@ Node *append(Node *head, int data) {
 }
 
 /**
- * @brief Recursively destroys a linked list by freeing each node.
+ * Recursively destroys a linked list by freeing each node.
  *
  * This function takes the head of a linked list as input and recursively
  * destroys the list by freeing each node. It returns NULL when the entire
